@@ -636,6 +636,10 @@ MonoBehaviour:
   - {fileID: 1293829541}
   - {fileID: 1494994780}
   winnerPanel: {fileID: 64221824}
+  xPlayersScore: 0
+  oPlayersScore: 0
+  xPlayersScoreText: {fileID: 913151252}
+  oPlayersScoreText: {fileID: 2130132434}
 --- !u!4 &111209727
 Transform:
   m_ObjectHideFlags: 0

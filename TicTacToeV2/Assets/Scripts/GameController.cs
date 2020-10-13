@@ -17,7 +17,10 @@ public class GameController : MonoBehaviour
     public Text winnerText;
     public GameObject[] winningLine; // Holds lines for the winning move
     public GameObject winnerPanel;
-
+    public int xPlayersScore;
+    public int oPlayersScore;
+    public Text xPlayersScoreText;
+    public Text oPlayersScoreText;
 
     // Start is called before the first frame update
     void Start()
@@ -100,10 +103,14 @@ public class GameController : MonoBehaviour
         winnerPanel.gameObject.SetActive(true);
         if(whoTurn == 0)
         {
+            xPlayersScore++;
+            xPlayersScoreText.text = xPlayersScore.ToString();
             winnerText.text = "Player X Wins!";
         }
         else if(whoTurn == 1)
         {
+            oPlayersScore++;
+            oPlayersScoreText.text = oPlayersScore.ToString();
             winnerText.text = "Player O Wins!";
         }
         winningLine[indexIn].SetActive(true);
