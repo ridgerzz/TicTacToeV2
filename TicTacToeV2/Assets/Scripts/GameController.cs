@@ -115,4 +115,23 @@ public class GameController : MonoBehaviour
         }
         winningLine[indexIn].SetActive(true);
     }
+
+    public void Rematch()
+    {
+        GameSetup();
+        for(int i = 0; i <winningLine.Length; i++)
+        {
+            winningLine[i].SetActive(false);
+        }
+        winnerPanel.SetActive(false);
+    }
+
+    public void Restart()
+    {
+        Rematch();
+        xPlayersScore = 0;
+        oPlayersScore = 0;
+        xPlayersScoreText.text = "0";
+        oPlayersScoreText.text = "0";
+    }
 }
