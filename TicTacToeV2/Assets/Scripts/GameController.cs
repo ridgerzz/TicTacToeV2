@@ -21,6 +21,7 @@ public class GameController : MonoBehaviour
     public int oPlayersScore;
     public Text xPlayersScoreText;
     public Text oPlayersScoreText;
+    public AudioSource buttonClickAudio;
 
     // Start is called before the first frame update
     void Start()
@@ -86,7 +87,7 @@ public class GameController : MonoBehaviour
         int s5 = markedSpaces[1] + markedSpaces[4] + markedSpaces[7];
         int s6 = markedSpaces[2] + markedSpaces[5] + markedSpaces[8];
         int s7 = markedSpaces[0] + markedSpaces[4] + markedSpaces[8];
-        int s8 = markedSpaces[0] + markedSpaces[4] + markedSpaces[6];
+        int s8 = markedSpaces[2] + markedSpaces[4] + markedSpaces[6];
         var solutions = new int[] { s1, s2, s3, s4, s5, s6, s7, s8 };
         for(int i = 0; i < solutions.Length; i++)
         {
@@ -133,5 +134,10 @@ public class GameController : MonoBehaviour
         oPlayersScore = 0;
         xPlayersScoreText.text = "0";
         oPlayersScoreText.text = "0";
+    }
+
+    public void PlayButtonClick()
+    {
+        buttonClickAudio.Play();
     }
 }

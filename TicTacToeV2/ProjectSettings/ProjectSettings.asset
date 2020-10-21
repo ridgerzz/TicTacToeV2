@@ -629,10 +629,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: d8dd365a-3697-426d-beb6-90aea2f4798f
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: TicTacToeV2
+  organizationId: ridgelanuza
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
